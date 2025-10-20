@@ -1,0 +1,349 @@
+/* Fonts: Inter (body) + Lora (headings) */
+/* Note: fonts are preloaded in header.php; do not import here to avoid double load */
+:root{
+    --ff-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --ff-heading: 'Lora', Georgia, serif;
+    --fw-regular: 400;
+    --fw-medium: 600;
+    --fw-bold: 700;
+}
+
+/* Couleurs : blanc et orange */
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+}
+
+/* ===== Header ===== */
+.navbar {
+    background-color: #ffffff; 
+    border-bottom: 2px solid #FFA500; 
+}
+
+.navbar-brand {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-medium);
+    color: #FFA500;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #e69500;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFA500;
+}
+
+.btn-reserver {
+    background-color: #FFA500;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn-reserver:hover {
+    background-color: #e69500; 
+    color: #ffffff;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #ffffff;
+    border-top: 2px solid #FFA500;
+    padding: 2rem 0;
+    color: #333333;
+}
+
+.footer-title {
+    color: #FFA500;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+/* Icônes réseaux sociaux */
+.social-link {
+    font-size: 1.5rem;
+    color: #FFA500;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    color: #e69500;
+    transform: scale(1.2);
+}
+
+/* ===== Page d'accueil ===== */
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero .text-orange {
+    color: #FFA500;
+}
+
+/* CTA Réservation */
+.reservation-cta {
+    background: url('https://images.unsplash.com/photo-1571162478581-ad3d0c1057ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;;
+    color: white;
+}
+
+/* ===== Section Présentation ===== */
+.section-title {
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFA500;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 2px;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== Section Administration ===== */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: var(--ff-heading);
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings use Lora by default */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-medium);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;  
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.tablinks {
+    background-color: #e69500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #e69500;
+    color: #fff;
+}
+
+.tablinks.active {
+    background-color: #e69500;
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    margin-top: 1rem;
+    padding: 20px;
+    border: 2px solid #e69500;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== Login ===== */
+.login-container .card {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.login-container .card-title {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.login-container .form-control {
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    padding: 10px 12px;
+}
+
+.login-container .btn-reserver {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.login-container .alert {
+    margin-bottom: 1rem;
+}
+
+/* ===== Admin creation forms ===== */
+.admin-create-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.admin-create-form input[type="text"],
+.admin-create-form input[type="number"],
+.admin-create-form input[type="datetime-local"],
+.admin-create-form input[type="email"],
+.admin-create-form textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.admin-create-form input:focus, .admin-create-form textarea:focus {
+    outline: none;
+    border-color: #FFA500;
+    box-shadow: 0 0 0 4px rgba(255,165,0,0.08);
+}
+
+.admin-create-form .btn {
+    background: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin-create-form .btn:hover {
+    background: #e69500;
+}
+
+.admin-small-help {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    .admin-create-form { grid-template-columns: 1fr; }
+}
+
+/* Modal admin */
+.admin-modal { display: none; align-items: center; justify-content: center; }
+.admin-modal-dialog { background: #fff; padding: 18px; border-radius: 10px; width: 90%; max-width: 720px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.admin-modal h4 { margin-top: 0; color: #333; }
+.form-control { padding: 10px 12px; border-radius: 8px; border: 1px solid #e6e6e6; width: 100%; box-sizing: border-box; }
+.form-control:focus { outline: none; border-color: #FFA500; box-shadow: 0 0 0 4px rgba(255,165,0,0.08); }
+
+/* ==== Small UI polish ==== */
+/* Cards: subtle lift on hover for product/planche/panier cards */
+.card { transition: transform 0.18s ease, box-shadow 0.18s ease; border: 1px solid #f0f0f0; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+.card .card-body { padding: 1rem; }
+
+/* Reserve button in cards: slightly larger on mobile and consistent padding */
+.btn-reserver { padding: 0.55rem 1.1rem; border-radius: 28px; }
+
+/* ===== Harmonized product/item styles ===== */
+.product-card { border-radius: 10px; }
+.product-card .card-body { padding: 1.15rem; }
+.item-title { font-size: 1.15rem; margin-bottom: 0.45rem; color: #222; font-weight: 700; }
+.item-meta { font-size: 0.95rem; color: #555; margin-bottom: 0.4rem; }
+.item-price { font-size: 1.05rem; color: #111; font-weight: 700; margin-bottom: 0.45rem; display:block; }
+.item-availability { font-size: 0.95rem; color: #2b8a3e; font-weight: 600; }
+.item-availability.zero { color: #c0392b; }
+
+/* Ensure reserve button is visually consistent across cards */
+.btn-reserver { font-size: 0.98rem; padding: 0.6rem 1.2rem; }
+
+@media (max-width: 768px) {
+    .item-title { font-size: 1.05rem; }
+    .item-price { font-size: 1rem; }
+}
+
+/* Fallback geo suggestion box when Places Autocomplete is not available or blocked */
+.geo-suggestions { box-shadow: 0 6px 18px rgba(0,0,0,0.08); border-radius: 6px; }
+.geo-suggestion-item:hover { background: #f7f7f7; }
+
+/* Checkbox allergenes list styling used in admin modals */
+.multi-checkbox-allergenes { display:block; }
+.multi-checkbox-allergenes > div { display:flex; align-items:center; gap:8px; padding:6px 4px; border-bottom:1px dashed #f3f3f3; }
+.multi-checkbox-allergenes > div:last-child { border-bottom: none; }
+.multi-checkbox-allergenes input[type="checkbox"] { width:16px; height:16px; accent-color: #FFA500; transform: translateY(-1px); }
+.multi-checkbox-allergenes label { font-size:0.95rem; color:#333; cursor:pointer; }
+
+/* Admin modal overlay improvements */
+.admin-modal { display:none; align-items:center; justify-content:center; position:fixed; inset:0; z-index:9999; }
+.admin-modal.show { display:flex; }
+.admin-modal-dialog { max-height: 85vh; overflow:auto; }
+
+/* Make form helper text and small controls clearer */
+.admin-small-help { color:#666; font-size:0.9rem; }
+
+/* Responsive tweak: tighten space for admin cards on small screens */
+@media (max-width: 520px) {
+    .multi-checkbox-allergenes > div { padding:6px 2px; }
+}
+
+
+/* Simple month calendar styling */
+.mini-calendar { font-family: var(--ff-body); }
+.mini-calendar .cal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px }
+.mini-calendar .cal-header .title { font-weight:600 }
+.mini-calendar .cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px }
+.mini-calendar .cal-weekday { text-align:center; font-size:0.85rem; color:var(--neutral-700); padding:6px 4px }
+.mini-calendar .cal-day { min-height:88px; background:var(--card); border-radius:8px; padding:8px; box-shadow:0 2px 6px rgba(0,0,0,0.04); position:relative; cursor:pointer }
+.mini-calendar .cal-day.other { opacity:0.45 }
+.mini-calendar .cal-day .date-num { position:absolute; top:8px; right:8px; font-size:12px; color:var(--neutral-700) }
+.mini-calendar .cal-day .events { margin-top:20px; display:block }
+.mini-calendar .cal-event { display:block; background:var(--color-primary); color:#fff; padding:4px 6px; border-radius:6px; font-size:12px; margin-bottom:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.mini-calendar .nav-btn { background:transparent;border:1px solid var(--neutral-500);padding:6px 10px;border-radius:6px;cursor:pointer }
